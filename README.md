@@ -23,7 +23,7 @@ rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 ```
 
-2. AWS SageMaker Deployment
+### 2. AWS SageMaker Deployment
 Once our model is trained and ready, we deploy it using AWS SageMaker:
 
 1. Model Packaging: Convert the trained model into a .tar.gz file.
