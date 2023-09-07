@@ -31,4 +31,19 @@ Once our model is trained and ready, we deploy it using AWS SageMaker:
 3. SageMaker Model Creation: Set up a SageMaker model using the S3 URI.
 4. Endpoint Creation: Establish an endpoint for the model, allowing for real-time predictions.
 
+### 3. Predictions
+With the SageMaker endpoint in place, we can make real-time predictions:
+
+```python
+data = [[5.1, 3.5, 1.4, 0.2]]
+response = client.invoke_endpoint(EndpointName=endpoint_name,
+                                  ContentType='application/json',
+                                  Body=json.dumps(data))
+```
+
+## Cleanup
+To avoid incurring unnecessary costs, always remember to delete the SageMaker endpoint, S3 bucket, and the SageMaker model after use.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
