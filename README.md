@@ -22,5 +22,12 @@ from sklearn.ensemble import RandomForestClassifier
 rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 
+2. AWS SageMaker Deployment
+Once our model is trained and ready, we deploy it using AWS SageMaker:
+
+a. Model Packaging: Convert the trained model into a .tar.gz file.
+b. Upload to S3: Utilize Boto3 to upload the model file to an S3 bucket.
+c. SageMaker Model Creation: Set up a SageMaker model using the S3 URI.
+d. Endpoint Creation: Establish an endpoint for the model, allowing for real-time predictions.
 
 
