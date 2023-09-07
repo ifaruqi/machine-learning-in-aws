@@ -14,7 +14,7 @@ The Iris dataset is one of the most iconic datasets in pattern recognition liter
 - Jupyter Notebook (for local experimentation)
 
 ## Step-by-Step Guide
-1. Model Development
+### 1. Model Development
 Using Scikit-learn, we develop a Random Forest Classifier. After splitting the dataset into training and testing subsets, the model is trained on the former and validated on the latter.
 
 ```python
