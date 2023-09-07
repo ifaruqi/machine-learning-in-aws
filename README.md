@@ -21,6 +21,7 @@ Using Scikit-learn, we develop a Random Forest Classifier. After splitting the d
 from sklearn.ensemble import RandomForestClassifier
 rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
+```
 
 2. AWS SageMaker Deployment
 Once our model is trained and ready, we deploy it using AWS SageMaker:
